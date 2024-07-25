@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
-//const connection = require("./db/db");
-const connection = require("./db/mysqldb");
-const redisClient = require("./db/redisdb");
+require('dotenv').config();
+const connection = require("./db/db");
+//const connection = require("./db/mysqldb");
+//const redisClient = require("./db/redisdb");
 const cors = require("cors");
 connection;
 

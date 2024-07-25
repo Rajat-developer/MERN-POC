@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const connection = mongoose.connect(mongoUri `${process.env.mongoUri}`)
+const connection = mongoose.connect(`${process.env.mongoUri}`)
 .then(() => {
     console.log('Connected to MongoDB');
 })
